@@ -1,0 +1,53 @@
+/*NAVBAR STYLE*/
+
+.navbar-default {
+    background-color: rgb(63, 77, 89);
+    -webkit-box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: rgb(119, 133, 141);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:active {
+    background-color: rgb(63, 77, 89);
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: rgb(119, 133, 141);
+}
+
+.nav > li > a:hover,
+.nav > li > a:active {
+    background-color: rgb(119, 133, 141);
+}
+
+.navbar-fixed-top {
+    border: 0;
+}
+
+.navbar-collapse {
+    border-top: 0;
+    box-shadow: 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:active {
+        background-color: rgb(63, 77, 89);
+        border-bottom: 3px solid rgb(115, 7, 31);
+    }
+    .navbar-default .navbar-nav > .active > a:hover {
+        background-color: rgb(119, 133, 141);
+        border-bottom: 3px solid rgb(115, 7, 31);
+    }
+    .navbar-default .navbar-nav > li > a:hover {
+        background-color: rgb(119, 133, 141);
+        border-bottom: 3px solid rgb(119, 133, 141);
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <row>
+    <div class="col-sm-1 col-md-2"></div>
+    <div class="container col-xs-12 col-sm-10 col-md-8 main-col text">
+        <table>
+            <th colspan="2">PERSONAL
+                <hr>
+            </th>
+            <tr>
+                <td>
+                    <p>Name:</p>
+                </td>
+                <td>
+                    <p>Sebastian De Ro</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Birthdate:</p>
+                </td>
+                <td>
+                    <p>27th of September 1998</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Sex:</p>
+                </td>
+                <td>
+                    <p>Male</p>
+                </td>
+            </tr>
+            <th colspan="2">
+                <br>INTERNSHIPS
+                <hr>
+            </th>
+            <tr>
+                <td style="padding-right:10px;">
+                    <p>July 6th 2015 - August 28th 2015:</p>
+                </td>
+                <td>
+                    <p>Internship of two months at <a href="http://www.automic.com" class="cv-link">Automic GmbH</a> in the department product management.
+                        <br> Activities included programming and webdesign.</p>
+                </td>
+            </tr>
+            <th colspan="2">
+                <br>EDUCATION
+                <hr>
+            </th>
+            <tr>
+                <td>
+                    <p>Graduated schools:</p>
+                </td>
+                <td>
+                    <p>Primary school <a href="http://www.vs-bischoffgasse.at" class="cv-link">Jean Pictet</a>
+                        <br>Grammar school <a href="http://www.wiednergymnasium.at" class="cv-link">Wiedner Gymnasium</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Current school:</p>
+                </td>
+                <td>
+                    <p>Vocational school <a href="http://www.spengergasse.at" class="cv-link">HTBLVA Spengergasse</a></p>
+                </td>
+            </tr>
+            <th colspan="2">
+                <br>SKILLS
+                <hr>
+            </th>
+            <tr>
+                <td>
+                    <p>Languages:</p>
+                </td>
+                <td>
+                    <p>German - Native
+                        <br>English - Oral: C1, Writen: B2
+                        <br>Bosnian - B1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Hard Skills:</p>
+                </td>
+                <td>
+                    <p>Java[Advanced], C# and C++[Basics]
+                        <br>HTML5, CSS3, PHP5, JavaScript, SOAP, REST
+                        <br>MS Word, MS Powerpoint, MS Exel, MS Access
+                        <br>Computer building and configuration
+                        <br>Unreal Engine 4</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Hobbies:</p>
+                </td>
+                <td>
+                    <p>Game Development
+                        <br>Percussion
+                        <br>Personal Projects</p>
+                </td>
+            </tr>
+        </table>
+        <a id="ignorePDF" target="_blank" class="btn-primary btn-lg" href="/images/myw3schoolsimage.jpg" download>PDF</a>
+        <script>
+            var doc = new jsPDF();
+            var elementHandler = {
+                '#ignorePDF': function (element, renderer) {
+                    return true;
+                }
+            };
+            var source = window.document.getElementsByTagName("body")[0];
+            doc.fromHTML(
+                source,
+                15,
+                15, {
+                    'width': 180,
+                    'elementHandlers': elementHandler
+                });
+
+            doc.output("dataurlnewwindow");
+        </script>
+    </div>
+    </row>
+</body>
+
+</html>
