@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
+<body id="content">
     <row>
     <div class="col-sm-1 col-md-2"></div>
     <div class="container col-xs-12 col-sm-10 col-md-8 main-col text">
@@ -104,25 +104,7 @@
                 </td>
             </tr>
         </table>
-        <a id="ignorePDF" target="_blank" class="btn-primary btn-lg" href="/images/myw3schoolsimage.jpg" download>PDF</a>
-        <script>
-            var doc = new jsPDF();
-            var elementHandler = {
-                '#ignorePDF': function (element, renderer) {
-                    return true;
-                }
-            };
-            var source = window.document.getElementsByTagName("body")[0];
-            doc.fromHTML(
-                source,
-                15,
-                15, {
-                    'width': 180,
-                    'elementHandlers': elementHandler
-                });
-
-            doc.output("dataurlnewwindow");
-        </script>
+        <a id="ignorePDF" target="_blank" class="btn-primary btn-lg" href="javascript:demoFromHTML();" download>PDF</a>
     </div>
     </row>
 </body>
