@@ -1,4 +1,4 @@
-function demoFromHTML() {
+function demoFromHTML(id, name) {
         var pdf = new jsPDF('p', 'pt', 'letter');
         
         specialElementHandlers = {
@@ -13,9 +13,9 @@ function demoFromHTML() {
             left: 40,
             width: 522
         };
-
+    
         pdf.fromHTML(
-            'documents/cv.html#content',
+            $('#' + id).html(),
             margins.left,
             margins.top, {
                 'width': margins.width,
@@ -23,6 +23,6 @@ function demoFromHTML() {
             },
 
             function (dispose) {
-                pdf.save('Test.pdf');
+                pdf.save(name);
             }, margins);
     }
