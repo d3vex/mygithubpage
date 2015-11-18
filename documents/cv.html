@@ -1,113 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body id="pdfContent">
+<body>
     <row>
-    <div class="col-sm-1 col-md-2"></div>
-    <div class="container col-xs-12 col-sm-10 col-md-8 main-col text">
-        <table>
-            <th colspan="2">PERSONAL
-                <hr>
-            </th>
-            <tr>
-                <td>
-                    <p>Name:</p>
-                </td>
-                <td>
-                    <p>Sebastian De Ro</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Birthdate:</p>
-                </td>
-                <td>
-                    <p>27th of September 1998</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Sex:</p>
-                </td>
-                <td>
-                    <p>Male</p>
-                </td>
-            </tr>
-            <th colspan="2">
-                <br>INTERNSHIPS
-                <hr>
-            </th>
-            <tr>
-                <td style="padding-right:10px;">
-                    <p>July 6th 2015 - August 28th 2015:</p>
-                </td>
-                <td>
-                    <p>Internship of two months at <a href="http://www.automic.com" class="cv-link">Automic GmbH</a> in the department product management.
-                        <br> Activities included programming and webdesign.</p>
-                </td>
-            </tr>
-            <th colspan="2">
-                <br>EDUCATION
-                <hr>
-            </th>
-            <tr>
-                <td>
-                    <p>Graduated schools:</p>
-                </td>
-                <td>
-                    <p>Primary school <a href="http://www.vs-bischoffgasse.at" class="cv-link">Jean Pictet</a>
-                        <br>Grammar school <a href="http://www.wiednergymnasium.at" class="cv-link">Wiedner Gymnasium</a></p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Current school:</p>
-                </td>
-                <td>
-                    <p>Vocational school <a href="http://www.spengergasse.at" class="cv-link">HTBLVA Spengergasse</a></p>
-                </td>
-            </tr>
-            <th colspan="2">
-                <br>SKILLS
-                <hr>
-            </th>
-            <tr>
-                <td>
-                    <p>Languages:</p>
-                </td>
-                <td>
-                    <p>German - Native
-                        <br>English - Oral: C1, Writen: B2
-                        <br>Bosnian - B1</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Hard Skills:</p>
-                </td>
-                <td>
-                    <p>Java[Advanced], C# and C++[Basics]
-                        <br>HTML5, CSS3, PHP5, JavaScript, SOAP, REST
-                        <br>MS Word, MS Powerpoint, MS Exel, MS Access
-                        <br>Computer building and configuration
-                        <br>Unreal Engine 4</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Hobbies:</p>
-                </td>
-                <td>
-                    <p>Game Development
-                        <br>Percussion
-                        <br>Personal Projects</p>
-                </td>
-            </tr>
-        </table>
-        <button id="bypassme" class="btn-primary btn-lg" onclick="javascript:demoFromHTML('pdfContent','Sebastian_De_Ro_CV.pdf');">PDF</button>
-    </div>
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrapStyleOverride.css">
+        <div class="col-sm-1 col-md-2"></div>
+        <div class="container col-xs-12 col-sm-10 col-md-8 main-col text">
+            <table id="pdfContent">
+                <th colspan="2">PERSONAL
+                    <hr>
+                </th>
+                <tr>
+                    <td>
+                        <p>Name:</p>
+                    </td>
+                    <td>
+                        <p>Sebastian De Ro</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Birthdate:</p>
+                    </td>
+                    <td>
+                        <p>27th of September 1998</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Sex:</p>
+                    </td>
+                    <td>
+                        <p>Male</p>
+                    </td>
+                </tr>
+                <th colspan="2">
+                    <br>INTERNSHIPS
+                    <hr>
+                </th>
+                <tr>
+                    <td style="padding-right:10px;">
+                        <p>July 6th 2015 - August 28th 2015:</p>
+                    </td>
+                    <td>
+                        <p>Internship of two months at <a href="http://www.automic.com" class="cv-link">Automic GmbH</a> in the department product management.
+                            <br> Activities included programming and webdesign.</p>
+                    </td>
+                </tr>
+                <th colspan="2">
+                    <br>EDUCATION
+                    <hr>
+                </th>
+                <tr>
+                    <td>
+                        <p>Graduated schools:</p>
+                    </td>
+                    <td>
+                        <p>Primary school <a href="http://www.vs-bischoffgasse.at" class="cv-link">Jean Pictet</a>
+                            <br>Grammar school <a href="http://www.wiednergymnasium.at" class="cv-link">Wiedner Gymnasium</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Current school:</p>
+                    </td>
+                    <td>
+                        <p>Vocational school <a href="http://www.spengergasse.at" class="cv-link">HTBLVA Spengergasse</a>
+                        </p>
+                    </td>
+                </tr>
+                <th colspan="2">
+                    <br>SKILLS
+                    <hr>
+                </th>
+                <tr>
+                    <td>
+                        <p>Languages:</p>
+                    </td>
+                    <td>
+                        <p>German - Native
+                            <br>English - Oral: C1, Writen: B2
+                            <br>Bosnian - B1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hard Skills:</p>
+                    </td>
+                    <td>
+                        <p>Java[Advanced], C# and C++[Basics]
+                            <br>HTML5, CSS3, PHP5, JavaScript, SOAP, REST
+                            <br>MS Word, MS Powerpoint, MS Exel, MS Access
+                            <br>Computer building and configuration
+                            <br>Unreal Engine 4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hobbies:</p>
+                    </td>
+                    <td>
+                        <p>Game Development
+                            <br>Percussion
+                            <br>Personal Projects</p>
+                    </td>
+                </tr>
+            </table>
+            <a id="bypassme" class="btn-primary btn-lg" onclick="return xepOnline.Formatter.Format('pdfContent',{render:'download', filename:'Sebastian_De_Ro_CV'});">PDF</a>
+        </div>
     </row>
-    <script src="//mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>
+    <script type="text/javascript" src="/include/css-to-pdf-master/js/xepOnline.jqPlugin.js"></script>
     <script src="/scripts/htmlToPDF.js"></script>
 </body>
 
