@@ -53,8 +53,10 @@ $("document").ready(function () {
         loadAbout();
     } else if (window.location.hash == "#portfolio") {
         loadPortfolio();
-    } else {
+    } else if (window.location.hash == "#cv"){
         loadCV();
+    } else if (window.location.hash == ""){
+        loadHome();
     }
 
     $("#menu_home").on("click", function () {
