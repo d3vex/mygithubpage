@@ -47,43 +47,16 @@ loadCV = function () {
 
 $("document").ready(function () {
 
-    function demoFromHTML() {
-        var pdf = new jsPDF('p', 'pt', 'letter');
-        
-        specialElementHandlers = {
-            '#bypassme': function (element, renderer) {
-                return true;
-            }
-        };
-        
-        margins = {
-            top: 80,
-            bottom: 60,
-            left: 40,
-            width: 522
-        };
-
-        pdf.fromHTML(
-            'documents/cv.html#content', // HTML string or DOM elem ref.
-            margins.left, // x coord
-            margins.top, { // y coord
-                'width': margins.width, // max width of content on PDF
-                'elementHandlers': specialElementHandlers
-            },
-
-            function (dispose) {
-                pdf.save('Test.pdf');
-            }, margins);
-    }
-
     if (window.location.hash == "#home") {
         loadHome();
     } else if (window.location.hash == "#about") {
         loadAbout();
     } else if (window.location.hash == "#portfolio") {
         loadPortfolio();
-    } else {
+    } else if (window.location.hash == "#cv"){
         loadCV();
+    } else if (window.location.hash == ""){
+        loadHome();
     }
 
     $("#menu_home").on("click", function () {
