@@ -16,13 +16,15 @@ hr {
     margin-bottom: 20px;
 }
 
-.slideHeaderFont{
+.slideHeaderFont {
     color: #ffffff;
 }
+
 
 /*
     CARDS
 */
+
 .mdl-card.mdl-card {
     width: 400px;
 }
@@ -41,14 +43,14 @@ hr {
     color: #fff;
 }
 
-.home-card{
+.home-card {
     margin: 0;
 }
+
+
 /*
     CARDS
 */
-
-
 
 .main-menubar-item > .mdl-navigation__link:hover,
 .menu-item-active {
