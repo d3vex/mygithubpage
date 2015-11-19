@@ -1,7 +1,3 @@
-* {
-    color: #ffffff !important;
-    font-family: Helvetica;
-}
 
 html {
     position: relative;
@@ -19,7 +15,7 @@ body {
 
 th {
     font-size: 25px;
-    color: #334D5C !important;
+    color: rgb(33, 80, 127) !important;
     font-weight: 100;
 }
 
@@ -29,12 +25,12 @@ p {
 }
 
 hr {
-    border-color: #47B29C !important;
+    border-color: rgb(115, 7, 31) !important;
     margin: 0;
 }
 
 .cv-link {
-    color: #E27A3F !important;
+    color: rgb(115, 7, 31) !important;
 }
 
 .spacer-cv {
@@ -42,7 +38,7 @@ hr {
 }
 
 .footer {
-    position: absolute; 
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 50px;
@@ -50,7 +46,7 @@ hr {
 }
 
 .footer-container {
-    color: #ffffff;
+    color: rgb(241, 242, 244);
     vertical-align: middle;
 }
 
@@ -72,7 +68,7 @@ hr {
 }
 
 .carouselWrapper {
-    background-color: #45B29D;
+    background-color: rgb(119, 133, 141);
     width: 100%;
     height: auto;
     margin-top: 50px;
