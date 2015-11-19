@@ -1,12 +1,12 @@
 clearMenu = function () {
-    document.getElementById("menu_home").className = "";
-    document.getElementById("menu_about").className = "";
-    document.getElementById("menu_portfolio").className = "";
-    document.getElementById("menu_cv").className = "";
+    document.getElementById("menu_home").className = "mdl-navigation__link mdl-typography--text-uppercase";
+    document.getElementById("menu_about").className = "mdl-navigation__link mdl-typography--text-uppercase";
+    document.getElementById("menu_portfolio").className = "mdl-navigation__link mdl-typography--text-uppercase";
+    document.getElementById("menu_cv").className = "mdl-navigation__link mdl-typography--text-uppercase";
 };
 loadHome = function () {
     clearMenu();
-    document.getElementById("menu_home").className = "active";
+    document.getElementById("menu_home").className = "mdl-layout__tab is-active";
     document.title = "Sebastian De Ro - Home";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";
@@ -16,7 +16,7 @@ loadHome = function () {
 };
 loadAbout = function () {
     clearMenu();
-    document.getElementById("menu_about").className = "active";
+    document.getElementById("menu_about").className = "mdl-layout__tab is-active";
     document.title = "Sebastian De Ro - About";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";
@@ -26,7 +26,7 @@ loadAbout = function () {
 };
 loadPortfolio = function () {
     clearMenu();
-    document.getElementById("menu_portfolio").className = "active";
+    document.getElementById("menu_portfolio").className = "mdl-layout__tab is-active";
     document.title = "Sebastian De Ro - Portfolio";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";
@@ -36,7 +36,7 @@ loadPortfolio = function () {
 };
 loadCV = function () {
     clearMenu();
-    document.getElementById("menu_cv").className = "active";
+    document.getElementById("menu_cv").className = "mdl-layout__tab is-active";
     document.title = "Sebastian De Ro - CV";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";

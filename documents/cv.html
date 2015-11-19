@@ -2,15 +2,15 @@
 <html lang="en">
 
 <body>
-    <row>
-
-        <div class="col-sm-1 col-md-2"></div>
-        <div class="container col-xs-12 col-sm-10 col-md-8 main-col text">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--0-col-phone"></div>
+        <div class="mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet text">
             <table id="pdfContent">
                 <link rel="stylesheet" href="include/bootstrap-3.3.5-dist/css/bootstrap.min.css">
                 <link rel="stylesheet" type="text/css" href="css/general.css">
                 <link rel="stylesheet" type="text/css" href="css/bootstrapStyleOverride.css">
-                <th colspan="2">PERSONAL
+                <th colspan="2">
+                    <h3>PERSONAL</h3>
                     <hr>
                 </th>
                 <tr>
@@ -38,7 +38,8 @@
                     </td>
                 </tr>
                 <th colspan="2">
-                    <br>INTERNSHIPS
+                    <br>
+                    <h3>INTERNSHIPS</h3>
                     <hr>
                 </th>
                 <tr>
@@ -51,7 +52,8 @@
                     </td>
                 </tr>
                 <th colspan="2">
-                    <br>EDUCATION
+                    <br>
+                    <h3>EDUCATION</h3>
                     <hr>
                 </th>
                 <tr>
@@ -74,7 +76,8 @@
                     </td>
                 </tr>
                 <th colspan="2">
-                    <br>SKILLS
+                    <br>
+                    <h3>SKILLS</h3>
                     <hr>
                 </th>
                 <tr>
@@ -99,6 +102,10 @@
                             <br>Unreal Engine 4</p>
                     </td>
                 </tr>
+                <th colspan="2">
+                    <h3>OTHER</h3>
+                    <hr>
+                </th>
                 <tr>
                     <td>
                         <p>Hobbies:</p>
@@ -112,7 +119,7 @@
             </table>
             <button id="bypassme" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="return xepOnline.Formatter.Format('pdfContent',{render:'download', filename:'Sebastian_De_Ro_CV'});">PDF</button>
         </div>
-    </row>
+    </div>
     <script type="text/javascript" src="/include/css-to-pdf-master/js/xepOnline.jqPlugin.js"></script>
 </body>
 
