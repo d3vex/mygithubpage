@@ -3,7 +3,7 @@
 }
 
 hr {
-    border-color: #47B29C;
+    border-color: #DF4949;
     margin: 0;
 }
 
@@ -16,6 +16,9 @@ hr {
     margin-bottom: 20px;
 }
 
+.slideHeaderFont{
+    color: #ffffff;
+}
 
 /*
     CARDS
