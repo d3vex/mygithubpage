@@ -7,10 +7,6 @@ hr {
     margin: 0;
 }
 
-html {
-    position: relative;
-}
-
 .cv-link {
     color: #E27A3F;
 }
@@ -20,6 +16,10 @@ html {
     margin-bottom: 20px;
 }
 
+
+/*
+    CARDS
+*/
 .mdl-card.mdl-card {
     width: 400px;
 }
@@ -37,6 +37,11 @@ html {
 .material-card > .mdl-card__menu {
     color: #fff;
 }
+/*
+    CARDS
+*/
+
+
 
 .main-menubar-item > .mdl-navigation__link:hover,
 .menu-item-active {

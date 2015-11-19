@@ -1,6 +1,5 @@
 clearMenu = function () {
     document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_about").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
     document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
     document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
 };
@@ -12,16 +11,6 @@ loadHome = function () {
         document.getElementById("content").innerHTML = "";
         jQuery("#content").load("documents/home.html");
         jQuery("#content").fadeIn(100);
-    });
-};
-loadAbout = function () {
-    clearMenu();
-    document.getElementById("menu_about").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-    document.title = "Sebastian De Ro - About";
-    jQuery("#content").fadeOut(100, function () {
-        document.getElementById("content").innerHTML = "";
-        jQuery("#content").load("documents/about.html");
-        jQuery("#content").fadeIn(200);
     });
 };
 loadPortfolio = function () {
@@ -49,8 +38,6 @@ $("document").ready(function () {
 
     if (window.location.hash == "#home") {
         loadHome();
-    } else if (window.location.hash == "#about") {
-        loadAbout();
     } else if (window.location.hash == "#portfolio") {
         loadPortfolio();
     } else if (window.location.hash == "#cv"){
@@ -62,9 +49,6 @@ $("document").ready(function () {
     $("#menu_home").on("click", function () {
         loadHome();
     });
-    $("#menu_about").on("click", function () {
-        loadAbout();
-    });
     $("#menu_portfolio").on("click", function () {
         loadPortfolio();
     });
@@ -74,9 +58,6 @@ $("document").ready(function () {
     
     $("#mobile_menu_home").on("click", function () {
         loadHome();
-    });
-    $("#mobile_menu_about").on("click", function () {
-        loadAbout();
     });
     $("#mobile_menu_portfolio").on("click", function () {
         loadPortfolio();
