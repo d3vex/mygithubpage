@@ -71,4 +71,17 @@ $("document").ready(function () {
     $("#menu_cv").on("click", function () {
         loadCV();
     });
+    
+    $("#mobile_menu_home").on("click", function () {
+        loadHome();
+    });
+    $("#mobile_menu_about").on("click", function () {
+        loadAbout();
+    });
+    $("#mobile_menu_portfolio").on("click", function () {
+        loadPortfolio();
+    });
+    $("#mobile_menu_cv").on("click", function () {
+        loadCV();
+    });
 });

@@ -20,10 +20,25 @@ html {
     margin-bottom: 20px;
 }
 
-.main-menubar-item .mdl-navigation__link:hover {
-    border-bottom: 5px solid #EFC94C;
+.mdl-card.mdl-card {
+    width: 400px;
 }
 
+.material-card {
+    margin: auto;
+}
+
+.material-card > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../media/header2.png') center / cover;
+}
+
+.material-card > .mdl-card__menu {
+    color: #fff;
+}
+
+.main-menubar-item > .mdl-navigation__link:hover,
 .menu-item-active {
     border-bottom: 5px solid #EFC94C;
 }
