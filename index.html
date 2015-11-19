@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta name="theme-color" content="#3F4D59">
-    <meta name="msapplication-navbutton-color" content="#3F4D59">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#3F4D59">
+    <meta name="theme-color" content="#334D5C">
+    <meta name="msapplication-navbutton-color" content="#334D5C">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#334D5C">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,53 +12,59 @@
 
     <title>Sebastian De Ro</title>
 
+    <link rel="icon" href="media/Sebastian_De_Ro_Logo.gif">
+    
     <link rel="stylesheet" href="include/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/general.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrapStyleOverride.css">
+    <link rel="stylesheet" type="text/css" href="include/mdl/material.min.css">
+    <link rel="stylesheet" type="text/css" href="css/materialOverride.css">
 </head>
 
 <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">Sebastian De Ro</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="" id="menu_home"><a href="#home">Home</a>
-                    </li>
-                    <li class="" id="menu_about"><a href="#about">About</a>
-                    </li>
-                    <li class="" id="menu_portfolio"><a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="" id="menu_cv"><a href="#cv">CV</a>
-                    </li>
-                </ul>
+        <div class="mdl-layout__header sd-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">
+                    Sebastian De Ro
+                </span>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <div class="mdl-navigation mdl-layout--large-screen-only">
+                    <nav class="mdl-navigation">
+                        <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_home" href="#home">Home</a>
+                        <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_portfolio" href="#portfolio">Portfolio</a>
+                        <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_cv" href="#cv">CV</a>
+                    </nav>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <div id="content" class=""></div>
-
-    <footer class="footer">
-        <div class="footer-container col-xs-12 col-sm-6 col-md-8">
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">
+          Sebastian De Ro
+        </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_home" href="index.html#home">Home</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_portfolio" href="index.html#portfolio">Portfolio</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_cv" href="index.html#cv">CV</a>
+            </nav>
         </div>
-    </footer>
 
+        <main class="mdl-layout__content" >
+            <div id="content"></div>            
+        </main>
+        
+        <footer class="mdl-mini-footer footer">
+            </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <script src="include/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <script src="scripts/indexScript.js"></script>
-
+    <script src="include/mdl/material.min.js"></script>
 </body>
 
 </html>
