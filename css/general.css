@@ -1,13 +1,16 @@
 * {
     font-family: Roboto;
 }
+
 hr {
     border-color: #47B29C;
     margin: 0;
 }
-html{
+
+html {
     position: relative;
 }
+
 .cv-link {
     color: #E27A3F;
 }
@@ -17,12 +20,21 @@ html{
     margin-bottom: 20px;
 }
 
+.main-menubar-item .mdl-navigation__link:hover {
+    border-bottom: 5px solid #EFC94C;
+}
+
+.menu-item-active {
+    border-bottom: 5px solid #EFC94C;
+}
+
 #myCarousel {
     max-height: 360px;
     max-width: 640px;
     margin: auto;
     margin-top: 0px;
 }
+
 .item > img {
     height: 360px;
     width: 640px;

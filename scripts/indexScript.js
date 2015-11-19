@@ -1,12 +1,12 @@
 clearMenu = function () {
-    document.getElementById("menu_home").className = "mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_about").className = "mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_portfolio").className = "mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_cv").className = "mdl-navigation__link mdl-typography--text-uppercase";
+    document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    document.getElementById("menu_about").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
 };
 loadHome = function () {
     clearMenu();
-    document.getElementById("menu_home").className = "mdl-layout__tab is-active";
+    document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
     document.title = "Sebastian De Ro - Home";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";
@@ -16,32 +16,32 @@ loadHome = function () {
 };
 loadAbout = function () {
     clearMenu();
-    document.getElementById("menu_about").className = "mdl-layout__tab is-active";
+    document.getElementById("menu_about").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
     document.title = "Sebastian De Ro - About";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";
         jQuery("#content").load("documents/about.html");
-        jQuery("#content").fadeIn(100);
+        jQuery("#content").fadeIn(200);
     });
 };
 loadPortfolio = function () {
     clearMenu();
-    document.getElementById("menu_portfolio").className = "mdl-layout__tab is-active";
+    document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
     document.title = "Sebastian De Ro - Portfolio";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";
         jQuery("#content").load("documents/portfolio.html");
-        jQuery("#content").fadeIn(100);
+        jQuery("#content").fadeIn(200);
     });
 };
 loadCV = function () {
     clearMenu();
-    document.getElementById("menu_cv").className = "mdl-layout__tab is-active";
+    document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
     document.title = "Sebastian De Ro - CV";
     jQuery("#content").fadeOut(100, function () {
         document.getElementById("content").innerHTML = "";
         jQuery("#content").load("documents/cv.html");
-        jQuery("#content").fadeIn(100);
+        jQuery("#content").fadeIn(200);
     });
 };
 
