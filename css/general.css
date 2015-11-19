@@ -1,3 +1,7 @@
+*{
+    color: white !important;
+    font-family: Helvetica;
+}
 
 html {
     position: relative;
