@@ -1,29 +1,29 @@
 /*NAVBAR STYLE*/
 
 .navbar-default {
-    background-color: #334D5C;
+    background-color: rgb(63, 77, 89);
     -webkit-box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    background-color: #45B29D;
+    background-color: rgb(119, 133, 141);
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:active {
-    background-color: #334D5C;
+    background-color: rgb(63, 77, 89);
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
-    background-color: #45B29D;
+    background-color: rgb(119, 133, 141);
 }
 
 .nav > li > a:hover,
 .nav > li > a:active {
-    background-color: #45B29D;
+    background-color: rgb(119, 133, 141);
 }
 
 .navbar-fixed-top {
@@ -39,15 +39,15 @@
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:focus,
     .navbar-default .navbar-nav > .active > a:active {
-        background-color: #334D5C;
-        border-bottom: 3px solid #EFC94C;
+        background-color: rgb(63, 77, 89);
+        border-bottom: 3px solid rgb(115, 7, 31);
     }
     .navbar-default .navbar-nav > .active > a:hover {
-        background-color: #45B29D;
-        border-bottom: 3px solid #EFC94C;
+        background-color: rgb(119, 133, 141);
+        border-bottom: 3px solid rgb(115, 7, 31);
     }
     .navbar-default .navbar-nav > li > a:hover {
-        background-color: #45B29D;
-        border-bottom: 3px solid #45B29D;
+        background-color: rgb(119, 133, 141);
+        border-bottom: 3px solid rgb(119, 133, 141);
     }
 }
