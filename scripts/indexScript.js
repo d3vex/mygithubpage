@@ -45,7 +45,6 @@ $("document").ready(function () {
     } else if (window.location.hash == ""){
         loadHome();
     }
-
     $("#menu_home").on("click", function () {
         loadHome();
     });

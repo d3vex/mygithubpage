@@ -7,7 +7,7 @@ hr {
     margin: 0;
 }
 
-.cv-link {
+.link {
     color: #E27A3F;
 }
 
@@ -36,6 +36,10 @@ hr {
 
 .material-card > .mdl-card__menu {
     color: #fff;
+}
+
+.home-card{
+    margin: 0;
 }
 /*
     CARDS
