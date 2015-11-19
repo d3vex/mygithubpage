@@ -1,5 +1,5 @@
 * {
-    color: rgb(241, 242, 244) !important;
+    color: #ffffff !important;
     font-family: Helvetica !important;
 }
 
@@ -19,7 +19,7 @@ body {
 
 th {
     font-size: 25px;
-    color: rgb(33, 80, 127) !important;
+    color: #45B29D !important;
     font-weight: 100;
 }
 
@@ -50,7 +50,7 @@ hr {
 }
 
 .footer-container {
-    color: rgb(241, 242, 244);
+    color: #ffffff;
     vertical-align: middle;
 }
 
@@ -72,7 +72,7 @@ hr {
 }
 
 .carouselWrapper {
-    background-color: rgb(119, 133, 141);
+    background-color: #45B29D;
     width: 100%;
     height: auto;
     margin-top: 50px;

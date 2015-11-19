@@ -1,29 +1,29 @@
 /*NAVBAR STYLE*/
 
 .navbar-default {
-    background-color: rgb(63, 77, 89);
+    background-color: #334D5C;
     -webkit-box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 6px 20px -10px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    background-color: rgb(119, 133, 141);
+    background-color: #45B29D;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:active {
-    background-color: rgb(63, 77, 89);
+    background-color: #334D5C;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
-    background-color: rgb(119, 133, 141);
+    background-color: #45B29D;
 }
 
 .nav > li > a:hover,
 .nav > li > a:active {
-    background-color: rgb(119, 133, 141);
+    background-color: #45B29D;
 }
 
 .navbar-fixed-top {
@@ -39,15 +39,15 @@
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:focus,
     .navbar-default .navbar-nav > .active > a:active {
-        background-color: rgb(63, 77, 89);
-        border-bottom: 3px solid rgb(115, 7, 31);
+        background-color: #334D5C;
+        border-bottom: 3px solid #EFC94C;
     }
     .navbar-default .navbar-nav > .active > a:hover {
-        background-color: rgb(119, 133, 141);
-        border-bottom: 3px solid rgb(115, 7, 31);
+        background-color: #45B29D;
+        border-bottom: 3px solid #EFC94C;
     }
     .navbar-default .navbar-nav > li > a:hover {
-        background-color: rgb(119, 133, 141);
-        border-bottom: 3px solid rgb(119, 133, 141);
+        background-color: #45B29D;
+        border-bottom: 3px solid #45B29D;
     }
 }
