@@ -19,7 +19,7 @@ body {
 
 th {
     font-size: 25px;
-    color: #45B29D !important;
+    color: #334D5C !important;
     font-weight: 100;
 }
 
@@ -29,12 +29,12 @@ p {
 }
 
 hr {
-    border-color: rgb(115, 7, 31) !important;
+    border-color: #47B29C !important;
     margin: 0;
 }
 
 .cv-link {
-    color: rgb(115, 7, 31) !important;
+    color: #E27A3F !important;
 }
 
 .spacer-cv {
@@ -46,7 +46,7 @@ hr {
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: rgb(63, 77, 89);
+    background-color: #334D5C;
 }
 
 .footer-container {
