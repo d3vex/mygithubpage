@@ -26,7 +26,7 @@ hr {
 */
 
 .mdl-card.mdl-card {
-    width: 400px;
+    width: 300px;
 }
 
 .material-card {
@@ -47,6 +47,11 @@ hr {
     margin: 0;
 }
 
+sd-social-btn{
+    height: 10px;
+    width: auto;
+    background: url('../media/linkedin.png') center / cover;
+}
 
 /*
     CARDS
