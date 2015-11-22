@@ -57,9 +57,13 @@ sd-social-btn{
     CARDS
 */
 
-.main-menubar-item > .mdl-navigation__link:hover,
+.main-menubar-item {
+    border-bottom: 4px solid #334D5C;
+}
+
+.main-menubar-item:hover,
 .menu-item-active {
-    border-bottom: 5px solid #EFC94C;
+    border-bottom: 4px solid #EFC94C;
 }
 
 #myCarousel {

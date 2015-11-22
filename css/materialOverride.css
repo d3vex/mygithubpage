@@ -1,5 +1,11 @@
 .sd-layout__header {
     background-color: #334D5C !important;
+    height: 66px;
+}
+
+a{
+    
+    text-decoration: none !important;
 }
 
 .sd-button--colored {
