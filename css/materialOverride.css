@@ -1,6 +1,19 @@
 .sd-layout__header {
         background-color: #334D5C !important;
 }
+@media screen and (max-width: 1024px) {
+    .sd-layout__header {
+        background-color: #334D5C !important;
+        height: 68px;
+    }
+    mdl-layout__header-row {
+        background-color: #334D5C !important;
+        height: 68px;
+    }
+    mdl-layout__header.is-compact {
+        height: 68px;
+    }
+}
 
 a {
     text-decoration: none !important;
