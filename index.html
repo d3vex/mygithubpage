@@ -21,11 +21,11 @@
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="include/mdl/material.min.css">
     <link rel="stylesheet" type="text/css" href="css/materialOverride.css">
+
 </head>
 
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
 
         <div class="mdl-layout__header sd-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
@@ -38,29 +38,24 @@
                 <div class="mdl-navigation mdl-layout--large-screen-only">
                     <nav class="mdl-navigation">
                         <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_home" href="#home">Home</a>
-
                         <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_portfolio" href="#portfolio">Portfolio</a>
-
                         <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_cv" href="#cv">CV</a>
                     </nav>
-                    <div class="mdl-layout__drawer">
-                        <span class="mdl-layout-title">
-                            Sebastian De Ro
-                        </span>
-                        <nav class="mdl-navigation">
-                            <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_home" href="index.html#home">Home</a>
-
-                            <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_portfolio" href="index.html#portfolio">Portfolio</a>
-
-                            <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_cv" href="index.html#cv">CV</a>
-                        </nav>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">
+                Sebastian De Ro
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_home" href="index.html#home">Home</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_portfolio" href="index.html#portfolio">Portfolio</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_cv" href="index.html#cv">CV</a>
+            </nav>
+        </div>
 
-
-        <main class="mdl-layout__content">
+        <main class="mdl-layout__content" style="flex: auto;">
 
             <div id="content"></div>
 
@@ -79,7 +74,6 @@
                     <a class="sd-social-btn mdl-mega-footer__social-btn" href="https://www.linkedin.com/in/sebastiandero"></a>
                 </div>
             </footer>
-
         </main>
     </div>
 
