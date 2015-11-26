@@ -47,7 +47,7 @@ hr {
     margin: 0;
 }
 
-sd-social-btn{
+.sd-social-btn{
     height: 10px;
     width: auto;
     background: url('../media/linkedin.png') center / cover;
