@@ -34,7 +34,7 @@ hr {
 }
 
 .material-card > .mdl-card__title {
-    color: #fff;
+    color: #ffffff;
     height: 176px;
     background: url('../media/header2.png') center / cover;
 }
@@ -47,7 +47,7 @@ hr {
     margin: 0;
 }
 
-sd-social-btn{
+.sd-social-btn{
     height: 10px;
     width: auto;
     background: url('../media/linkedin.png') center / cover;
