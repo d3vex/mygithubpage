@@ -1,56 +1,46 @@
 * {
-    font-family: Roboto;
+  font-family: Roboto;
 }
-
 hr {
-    border-color: #DF4949;
-    margin: 0;
+  border-color: #DF4949;
+  margin: 0;
 }
-
 .link {
-    color: #E27A3F;
+  color: #E27A3F;
 }
-
 .main-col {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 .slideHeaderFont {
-    color: #ffffff;
+  color: #ffffff;
 }
-
 
 /*
     CARDS
 */
 
 .mdl-card.mdl-card {
-    width: 300px;
+  width: 300px;
 }
-
 .material-card {
-    margin: auto;
+  margin: auto;
 }
-
 .material-card > .mdl-card__title {
-    color: #ffffff;
-    height: 176px;
-    background: url('../media/header2.png') center / cover;
+  color: #ffffff;
+  height: 176px;
+  background: url('../media/header2.png') center / cover;
 }
-
 .material-card > .mdl-card__menu {
-    color: #fff;
+  color: #fff;
 }
-
 .home-card {
-    margin: 0;
+  margin: 0;
 }
-
-.sd-social-btn{
-    height: 10px;
-    width: auto;
-    background: url('../media/linkedin.png') center / cover;
+.sd-social-btn {
+  height: 10px;
+  width: auto;
+  background: url('../media/linkedin.png') center / cover;
 }
 
 /*
@@ -58,42 +48,36 @@ hr {
 */
 
 .main-menubar-item {
-    border-bottom: 4px solid #334D5C;
+  border-bottom: 4px solid #334D5C;
 }
-
-.main-menubar-item:hover,
-.menu-item-active {
-    border-bottom: 4px solid #EFC94C;
+.main-menubar-item:hover, .menu-item-active {
+  border-bottom: 4px solid #EFC94C;
 }
-
 #myCarousel {
-    max-height: 360px;
-    max-width: 640px;
-    margin: auto;
-    margin-top: 0px;
+  max-height: 360px;
+  max-width: 640px;
+  margin: auto;
+  margin-top: 0px;
 }
-
 .item > img {
-    height: 360px;
-    width: 640px;
-    width: 100%;
+  height: 360px;
+  width: 640px;
+  width: 100%;
 }
-
 .carouselWrapper {
-    background-color: #45B29D;
-    width: 100%;
-    height: auto;
-    padding: 0;
+  background-color: #45B29D;
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
-
 @media (min-width: 768px) {
-    .item > img {
-        height: 540px;
-        width: 960px;
-    }
-    #myCarousel {
-        max-height: 540px;
-        max-width: 960px;
-        margin: auto;
-    }
+  .item > img {
+    height: 540px;
+    width: 960px;
+  }
+  #myCarousel {
+    max-height: 540px;
+    max-width: 960px;
+    margin: auto;
+  }
 }

@@ -1,15 +1,12 @@
 .sd-layout__header {
-        background-color: #334D5C !important;
+  background-color: #334D5C !important;
 }
-
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
-
 .sd-button--colored {
-    color: #45B29D !important;
+  color: #45B29D !important;
 }
-
 .sd-raised-button--colored {
-    background-color: #45B29D !important;
+  background-color: #45B29D !important;
 }
