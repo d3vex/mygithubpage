@@ -42,6 +42,9 @@ hr {
   width: auto;
   background: url('../media/linkedin.png') center / cover;
 }
+.sd-header {
+  color: #45B29D;
+}
 
 /*
     CARDS

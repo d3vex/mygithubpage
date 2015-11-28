@@ -10,3 +10,7 @@ a {
 .sd-raised-button--colored {
   background-color: #45B29D !important;
 }
+
+td {
+  min-width: 170px;
+}
