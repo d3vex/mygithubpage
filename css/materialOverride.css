@@ -13,6 +13,12 @@ a {
 td {
   min-width: 160px;
 }
-.sd-layout__header-row.is-small-screen {
-  padding: 0px 40px 0px 80px;
+@media (min-width: 1025px) {
+  .mdl-layout__header-row {
+    height: 66px !important;
+  }
+  .mdl-layout__header.is-compact {
+    height: 66px !important;
+    max-height: 66px !important;
+  }
 }
