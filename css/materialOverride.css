@@ -10,7 +10,9 @@ a {
 .sd-raised-button--colored {
   background-color: #45B29D !important;
 }
-
 td {
   min-width: 160px;
+}
+.sd-layout__header-row.is-small-screen {
+  padding: 0px 40px 0px 80px;
 }

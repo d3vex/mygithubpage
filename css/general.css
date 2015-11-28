@@ -83,4 +83,11 @@ hr {
     max-width: 960px;
     margin: auto;
   }
+
+
+}
+@media (min-width: 1025px) {
+  .sd-layout__header-row {
+    padding: 0px 40px 0px 40px !important;
+  }
 }
