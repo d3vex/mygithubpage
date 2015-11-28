@@ -13,6 +13,11 @@ a {
 td {
   min-width: 160px;
 }
+
+.mdl-layout-title{
+  cursor: pointer;
+}
+
 @media (min-width: 1025px) {
   .mdl-layout__header-row {
     height: 66px !important;

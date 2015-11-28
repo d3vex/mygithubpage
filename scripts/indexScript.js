@@ -76,4 +76,8 @@ $("document").ready(function() {
   $("#linkedin-button").on("click", function() {
     window.open("http://www.linkedin.com/in/sebastiandero", '_blank').focus();
   });
+
+  $(".mdl-layout-title").on("click", function() {
+    loadHome();
+  });
 });
