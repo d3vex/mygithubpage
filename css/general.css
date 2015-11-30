@@ -21,14 +21,14 @@ hr {
 */
 
 .mdl-card.mdl-card {
-  width: 300px;
+  width: 320px;
 }
 .material-card {
   margin: auto;
 }
 .material-card > .mdl-card__title {
   color: #ffffff;
-  height: 176px;
+  height: 18px;
   background: url('../media/header2.png') center / cover;
 }
 .material-card > .mdl-card__menu {
