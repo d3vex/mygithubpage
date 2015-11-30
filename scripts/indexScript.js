@@ -3,45 +3,34 @@ clearMenu = function() {
   document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
   document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
 };
-loadHome = function() {
-  clearMenu();
-  document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-  document.title = "Sebastian De Ro - Home";
-  $("#content").fadeOut(100, function() {
+
+loadPage = function(menuitem, title, docPath) {
+  if (menuitem != "none") {
+    clearMenu();
+    document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
+  }
+  document.title = title;
+  $("#page-content").fadeOut(100, function() {
     document.getElementById("content").innerHTML = "";
-    $("#content").load("documents/home.html");
-    $("#content").fadeIn(100);
+    $("#content").load(docPath, function() {
+      $("#page-content").fadeIn(200);
+    });
   });
+};
+
+loadHome = function() {
+  loadPage("menu_home", "Sebastian De Ro - Home", "documents/home.html");
 };
 loadPortfolio = function() {
-  clearMenu();
-  document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-  document.title = "Sebastian De Ro - Portfolio";
-  $("#content").fadeOut(100, function() {
-    document.getElementById("content").innerHTML = "";
-    $("#content").load("documents/portfolio.html");
-    $("#content").fadeIn(200);
-  });
+  loadPage("menu_portfolio", "Sebastian De Ro - Portfolio", "documents/portfolio.html");
 };
 loadCV = function() {
-  clearMenu();
-  document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-  document.title = "Sebastian De Ro - CV";
-  $("#content").fadeOut(100, function() {
-    document.getElementById("content").innerHTML = "";
-    $("#content").load("documents/cv.html");
-    $("#content").fadeIn(200);
-  });
+  loadPage("menu_cv", "Sebastian De Ro - CV", "documents/cv.html");
 };
 loadSitenotice = function() {
-  clearMenu();
-  document.title = "Sebastian De Ro - Site notice";
-  $("#content").fadeOut(100, function() {
-    document.getElementById("content").innerHTML = "";
-    $("#content").load("documents/impressum.html");
-    $("#content").fadeIn(200);
-  });
+  loadPage("none", "Sebastian De Ro - Site notice", "documents/impressum.html");
 };
+
 $("document").ready(function() {
 
   if (window.location.hash == "#home") {
