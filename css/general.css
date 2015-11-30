@@ -29,7 +29,7 @@ hr {
 .material-card > .mdl-card__title {
   color: #ffffff;
   height: 18px;
-  background: url('../media/header2.png') center / cover;
+  background: url('../media/cardheader1.png') center / cover;
 }
 .material-card > .mdl-card__menu {
   color: #fff;
