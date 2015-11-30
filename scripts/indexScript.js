@@ -5,17 +5,36 @@ clearMenu = function() {
 };
 
 loadPage = function(menuitem, title, docPath) {
-  if (menuitem != "none") {
-    clearMenu();
-    document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-  }
-  document.title = title;
-  $("#page-content").fadeOut(100, function() {
-    document.getElementById("content").innerHTML = "";
-    $("#content").load(docPath, function() {
-      $("#page-content").fadeIn(200);
+  if ($("#page-content").scrollTop() == 0) {
+    if (menuitem != "none") {
+      clearMenu();
+      document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
+    }
+    document.title = title;
+    $("#page-content").fadeOut(100, function() {
+      document.getElementById("content").innerHTML = "";
+      $("#content").load(docPath, function() {
+        $("#page-content").fadeIn(200);
+      });
     });
-  });
+  } else {
+    $("#page-content").animate({
+      scrollTop: 0
+    }, 200, function() {
+
+      if (menuitem != "none") {
+        clearMenu();
+        document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
+      }
+      document.title = title;
+      $("#page-content").fadeOut(100, function() {
+        document.getElementById("content").innerHTML = "";
+        $("#content").load(docPath, function() {
+          $("#page-content").fadeIn(200);
+        });
+      });
+    });
+  };
 };
 
 loadHome = function() {
