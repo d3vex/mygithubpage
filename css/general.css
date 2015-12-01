@@ -19,14 +19,14 @@ hr {
 /*
     CARDS
 */
-
+.sd-card-wrap{
+  min-width: 320px;
+}
 .mdl-card.mdl-card {
   width: 320px;
 }
 .material-card {
   margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 .material-card > .mdl-card__title.sd-drakon-card {
   color: #ffffff;
