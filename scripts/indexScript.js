@@ -52,6 +52,8 @@ loadSitenotice = function() {
 
 $("document").ready(function() {
 
+  $(".cover-sheet").hide();
+
   if (window.location.hash == "#home") {
     loadHome();
   } else if (window.location.hash == "#portfolio") {
