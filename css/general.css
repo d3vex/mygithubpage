@@ -42,6 +42,11 @@ hr {
   height: 180px;
   background: url('../media/cardheader1.png') center / cover;
 }
+.material-card > .sd-automic-reference {
+  color: #ffffff;
+  height: 180px;
+  background: #1e1e1e url('../media/AutomicLogo.png') center / cover;
+}
 .material-card > .mdl-card__menu {
   color: #fff;
 }
