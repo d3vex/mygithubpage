@@ -36,9 +36,21 @@
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-navigation mdl-layout--large-screen-only">
           <nav class="mdl-navigation">
+
             <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_home" href="#home">Home</a>
             <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_portfolio" href="#portfolio">Portfolio</a>
             <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_cv" href="#cv">CV</a>
+
+
+            <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons sd-language-selector">language</i>
+            </button>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+              <li class="mdl-menu__item" id="langEn">English</li>
+              <li class="mdl-menu__item" id="langDe">Deutsch</li>
+            </ul>
+
           </nav>
         </div>
       </div>
@@ -66,9 +78,10 @@
         <div class="mdl-mini-footer__left-section">
           <div class="mdl-logo" href="#">Sebastian De Ro</div>
           <ul class="mdl-mini-footer__link-list">
-            <li><a href="mailto:sebastian.dero@yahoo.de">Contact me</a></a>
-            </li>
-            <li><a href="javascript:loadSitenotice();">Site notice</a></li>
+            <li><a href="mailto:sebastian.dero@yahoo.de" class="en">Contact me</a></li>
+            <li><a href="javascript:loadSitenotice();" class="en">Site notice</a></li>
+            <li><a href="mailto:sebastian.dero@yahoo.de" class="de">Kontakt</a></li>
+            <li><a href="javascript:loadSitenotice();" class="de">Impressum</a></li>
           </ul>
         </div>
         <div class="mdl-mini-footer__right-section">

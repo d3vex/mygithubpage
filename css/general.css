@@ -62,6 +62,10 @@ hr {
   color: #45B29D;
 }
 
+.sd-language-selector{
+  cursor: pointer;
+}
+
 /*
     CARDS
 */
