@@ -1,117 +1,116 @@
 * {
-  font-family: Roboto;
+    font-family: Roboto;
 }
+
 hr {
-  border-color: #DF4949;
-  margin: 0;
+    border-color: #DF4949;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav {
+    padding: 0 20px;
 }
 .link {
-  color: #E27A3F;
+    color: #E27A3F;
 }
+
 .main-col {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .slideHeaderFont {
-  color: #ffffff;
+    color: #ffffff;
 }
 
-.cover-sheet{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  z-index: 999;
+.cover-sheet {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
 }
+
+
 /*
     CARDS
 */
-.sd-card-wrap{
-  min-width: 320px;
+.card{
+    max-width: 350px
 }
-.mdl-card.mdl-card {
-  width: 320px;
-}
-.material-card {
-  margin: auto;
-}
-.material-card > .mdl-card__title.sd-drakon-card {
-  color: #ffffff;
-  height: 180px;
-  background: url('../media/cardheader1.png') center / cover;
-}
-.material-card > .sd-automic-reference {
-  color: #ffffff;
-  height: 180px;
-  background: #1e1e1e url('../media/AutomicLogo.png') center / cover;
-}
-.material-card > .mdl-card__menu {
-  color: #fff;
-}
-.home-card {
-  margin: 0;
-}
+
 .sd-social-btn {
-  height: 10px;
-  width: auto;
-  background: url('../media/linkedin.png') center / cover;
+    height: 10px;
+    width: auto;
+    background: url('../media/linkedin.png') center / cover;
 }
+
 .sd-header {
-  color: #45B29D;
+    color: #45B29D;
 }
 
-.sd-language-selector{
-  cursor: pointer;
+.sd-language-selector {
+    cursor: pointer;
 }
-
-/*
-    CARDS
-*/
-
 .main-menubar-item {
-  border-bottom: 4px solid #334D5C;
+    border-bottom: 4px solid #334D5C;
 }
-.main-menubar-item:hover, .menu-item-active {
-  border-bottom: 4px solid #EFC94C;
+
+.main-menubar-item:hover,
+.menu-item-active {
+    border-bottom: 4px solid #EFC94C;
 }
 
 #myCarousel {
-  max-height: 360px;
-  max-width: 640px;
-  margin: auto;
-  margin-top: 0px;
-}
-.item > img {
-  height: 360px;
-  width: 640px;
-  width: 100%;
-}
-.carouselWrapper {
-  background-color: #45B29D;
-  width: 100%;
-  height: auto;
-  padding: 0;
-}
-@media (min-width: 768px) {
-  .item > img {
-    height: 540px;
-    width: 960px;
-  }
-  #myCarousel {
-    max-height: 540px;
-    max-width: 960px;
+    max-height: 360px;
+    max-width: 640px;
     margin: auto;
-  }
-
-.carousel-control.left, .carousel-control.right{
-  background: transparent 100% !important;
+    margin-top: 0px;
 }
 
+.item > img {
+    height: 360px;
+    width: 640px;
+    width: 100%;
 }
+
+.carouselWrapper {
+    background-color: #45B29D;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .item > img {
+        height: 540px;
+        width: 960px;
+    }
+    #myCarousel {
+        max-height: 540px;
+        max-width: 960px;
+        margin: auto;
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+        background: transparent 100% !important;
+    }
+}
+
 @media (min-width: 1025px) {
-  .sd-layout__header-row {
-    padding: 0px 40px 0px 40px !important;
-  }
+    .sd-layout__header-row {
+        padding: 0px 40px 0px 40px !important;
+    }
 }
