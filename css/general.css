@@ -16,9 +16,16 @@ body {
 main {
     flex: 1 0 auto;
 }
-
-nav {
+nav{
+    background-color: #334D5C;
     padding: 0 20px;
+}
+footer.page-footer{
+    background-color: #424242;
+}
+.card{
+    margin-left: auto;
+    margin-right: auto;
 }
 .link {
     color: #E27A3F;
@@ -42,7 +49,12 @@ nav {
     background-color: #fff;
     z-index: 999;
 }
-
+.pdf-btn{
+    line-height: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+}
 /*
     CARDS
 */
@@ -50,26 +62,8 @@ nav {
     max-width: 350px
 }
 
-.sd-social-btn {
-    height: 10px;
-    width: auto;
-    background: url('../media/linkedin.png') center / cover;
-}
-
 .sd-header {
     color: #45B29D;
-}
-
-.sd-language-selector {
-    cursor: pointer;
-}
-.main-menubar-item {
-    border-bottom: 4px solid #334D5C;
-}
-
-.main-menubar-item:hover,
-.menu-item-active {
-    border-bottom: 4px solid #EFC94C;
 }
 
 #myCarousel {
@@ -77,54 +71,12 @@ nav {
     max-width: 640px;
     margin: auto;
     margin-top: 0px;
-}
+}: 100%;
 
-.item > img {
-    height: 360px;
-    width: 640px;
-    width: 100%;
-}
-
-.carouselWrapper {
-    background-color: #45B29D;
-    width: 100%;
-    height: auto;
-    padding: 0;
-}
-
-@media (min-width: 768px) {
-    .item > img {
-        height: 540px;
-        width: 960px;
-    }
-    #myCarousel {
-        max-height: 540px;
-        max-width: 960px;
-        margin: auto;
-    }
-    .carousel-control.left,
-    .carousel-control.right {
-        background: transparent 100% !important;
-    }
-}
-
-@media (min-width: 1025px) {
-    .sd-layout__header-row {
-        padding: 0px 40px 0px 40px !important;
-    }
-}
-.sd-layout__header {
-  background-color: #334D5C !important;
-}
 a {
   text-decoration: none !important;
 }
-.sd-button--colored {
-  color: #45B29D !important;
-}
-.sd-raised-button--colored {
-  background-color: #45B29D !important;
-}
+
 td {
   min-width: 160px;
 }
