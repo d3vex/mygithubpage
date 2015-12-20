@@ -103,7 +103,17 @@ $("document").ready(function () {
     if (lang == "de") switchDe();
 
     $(".cover-sheet").hide();
-
+    $(".button-collapse").sideNav();
+    $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: false, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: true, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
 
     if (window.location.hash == "#home") {
         currentSite = loadHome();
@@ -137,14 +147,10 @@ $("document").ready(function () {
     $("#linkedin-button").on("click", function () {
         window.open("http://www.linkedin.com/in/sebastiandero", '_blank').focus();
     });
-    $("#langEn").on("click", function () {
+    $(".langEn").on("click", function () {
         switchEn();
     });
-    $("#langDe").on("click", function () {
+    $(".langDe").on("click", function () {
         switchDe();
-    });
-
-    $(".mdl-layout-title").on("click", function () {
-        loadHome();
     });
 });

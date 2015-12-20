@@ -46,15 +46,26 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#home" class="brand-logo">Sebastian De Ro</a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a id="menu_home" href="#home">Home</a></li>
                     <li><a id="menu_portfolio" href="#portfolio">Portfolio</a></li>
                     <li><a id="menu_cv" href="#cv">CV</a></li>
-                    <!--<li><a data-activates='langDrop'><i class="material-icons sd-language-selector">language</i></a></li>-->
+                    <li><a data-activates='langDrop' href='#' class="dropdown-button"><i class="material-icons">language</i></a></li>
+                    <ul id='langDrop' class='dropdown-content'>
+                        <li class="langEn"><a>English</a></li>
+                        <li class="langDe"><a>Deutsch</a></li>
+                    </ul>
                 </ul>
-                <ul id='langDrop' class='dropdown-content'>
-                    <li class="mdl-menu__item" id="langEn">English</li>
-                    <li class="mdl-menu__item" id="langDe">Deutsch</li>
+                <ul class="side-nav" id="mobile-menu">
+                    <li><a id="menu_home" href="javascript:loadHome();">Home</a></li>
+                    <li><a id="menu_portfolio" href="javascript:loadPortfolio();">Portfolio</a></li>
+                    <li><a id="menu_cv" href="javascript:loadCV();">CV</a></li>
+                    <li><a data-activates='langDrop2' href='#' class="dropdown-button">Language</a></li>
+                    <ul id='langDrop2' class='dropdown-content'>
+                        <li class="langEn"><a>English</a></li>
+                        <li class="langDe"><a>Deutsch</a></li>
+                    </ul>
                 </ul>
             </div>
         </nav>
@@ -71,7 +82,7 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Sebastian De Ro</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    <p class="grey-text text-lighten-4"></p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Connect</h5>
