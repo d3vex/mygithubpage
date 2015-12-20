@@ -2,9 +2,9 @@ var lang;
 var currentSite;
 
 clearMenu = function () {
-    document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    //document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    //document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    //document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
 };
 
 loadPage = function (menuitem, title, docPath) {
@@ -13,7 +13,7 @@ loadPage = function (menuitem, title, docPath) {
     if ($("#page-content").scrollTop() == 0) {
         if (menuitem != "none") {
             clearMenu();
-            document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
+            //document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
         }
         document.title = title;
         $("#page-content").fadeOut(100, function () {
@@ -104,9 +104,6 @@ $("document").ready(function () {
 
     $(".cover-sheet").hide();
 
-    $('.slider').slider({
-        full_width: true
-    });
 
     if (window.location.hash == "#home") {
         currentSite = loadHome();

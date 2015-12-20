@@ -43,7 +43,6 @@ nav {
     z-index: 999;
 }
 
-
 /*
     CARDS
 */
@@ -113,4 +112,19 @@ nav {
     .sd-layout__header-row {
         padding: 0px 40px 0px 40px !important;
     }
+}
+.sd-layout__header {
+  background-color: #334D5C !important;
+}
+a {
+  text-decoration: none !important;
+}
+.sd-button--colored {
+  color: #45B29D !important;
+}
+.sd-raised-button--colored {
+  background-color: #45B29D !important;
+}
+td {
+  min-width: 160px;
 }
