@@ -48,10 +48,6 @@ loadHome = function () {
         loadPage("menu_home", "Sebastian De Ro - Home", "documents/home_de.html");
     else
         loadPage("menu_home", "Sebastian De Ro - Home", "documents/home.html");
-
-    $('.slider').slider({
-        full_width: true
-    });
 };
 loadPortfolio = function () {
     currentSite = "portfolio";
