@@ -178,6 +178,7 @@ td {
     background-color: rgba(0, 0, 0, 0);
     filter: alpha(opacity=50);
     opacity: .5;
+    max-height: 703px;
 }
 
 .carousel-control.right {
@@ -323,6 +324,7 @@ td {
 
 .carousel-inner > .item > img {
     height: 100% !important;
+    max-height: 703px;
     width: 100% !important;
     background-size: cover;
     background-position: center center;
