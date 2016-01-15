@@ -16,10 +16,12 @@ loadPage = function (menuitem, title, docPath) {
             //document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
         }
         document.title = title;
+        $(".page-footer").fadeOut(100);
         $("#page-content").fadeOut(100, function () {
             document.getElementById("content").innerHTML = "";
             $("#content").load(docPath, function () {
                 $("#page-content").fadeIn(200);
+                $(".page-footer").fadeIn(200);
             });
         });
     } else {
@@ -32,10 +34,12 @@ loadPage = function (menuitem, title, docPath) {
                 //document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
             }
             document.title = title;
+            $(".page-footer").fadeOut(100);
             $("#page-content").fadeOut(100, function () {
                 document.getElementById("content").innerHTML = "";
                 $("#content").load(docPath, function () {
                     $("#page-content").fadeIn(200);
+                    $(".page-footer").fadeIn(200);
                 });
             });
         });
@@ -101,15 +105,14 @@ $("document").ready(function () {
     $(".cover-sheet").hide();
     $(".button-collapse").sideNav();
     $('.dropdown-button').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
-      hover: false, // Activate on hover
-      gutter: 0, // Spacing from edge
-      belowOrigin: true, // Displays dropdown below the button
-      alignment: 'left' // Displays dropdown with edge aligned to the left of button
-    }
-  );
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: false, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    });
 
     if (window.location.hash == "#home") {
         currentSite = loadHome();
