@@ -48,6 +48,10 @@ td, th{
     color: #ffffff;
 }
 
+.progress{
+    max-width: 600px;
+}
+
 .cover-sheet {
     position: absolute;
     top: 0px;
