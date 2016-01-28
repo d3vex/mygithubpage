@@ -49,12 +49,12 @@ td, th{
 }
 
 .progress{
-    max-width: 600px;
-    background-color: #45B29D;
+    max-width: 622px;
+    background-color: #b6fff1;
 }
 
 .progress .determinate {
-    background-color: #334D5C;
+    background-color: #45B29D;
 }
 .cover-sheet {
     position: absolute;
