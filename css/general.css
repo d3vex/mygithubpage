@@ -50,11 +50,11 @@ td, th{
 
 .progress{
     max-width: 622px;
-    background-color: #b6fff1;
+    background-color: #547b91;
 }
 
 .progress .determinate {
-    background-color: #45B29D;
+    background-color: #334D5C;
 }
 .cover-sheet {
     position: absolute;
@@ -75,7 +75,7 @@ td, th{
 }
 
 .sd-header {
-    color: #45B29D;
+    color: #334D5C;
 }
 
 a {
