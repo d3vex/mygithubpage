@@ -2,89 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta name="theme-color" content="#334D5C">
-    <meta name="msapplication-navbutton-color" content="#334D5C">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#334D5C">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Sebastian De Ro - Home">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#334D5C" />
+    <meta name="msapplication-navbutton-color" content="#334D5C" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#334D5C" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Sebastian De Ro - Home" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     <title>Sebastian De Ro</title>
 
-    <link rel="icon" sizes="64x64" href="media/Sebastian_De_Ro_Logo.gif">
+    <link rel="icon" sizes="64x64" href="media/Sebastian_De_Ro_Logo.gif" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    <link rel="stylesheet" href="include/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="css/general.css">
-    <link rel="stylesheet" type="text/css" href="include/mdl/material.min.css">
-    <link rel="stylesheet" type="text/css" href="css/materialOverride.css">
+        ga('create', 'UA-71301024-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
 </head>
 
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<body id="wrap">
 
-        <div class="mdl-layout__header sd-layout__header mdl-layout__header--waterfall">
-            <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">
-                    Sebastian De Ro
-                </span>
-                <!-- Add spacer, to align navigation to the right in desktop -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation -->
-                <div class="mdl-navigation mdl-layout--large-screen-only">
-                    <nav class="mdl-navigation">
-                        <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_home" href="#home">Home</a>
-                        <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_portfolio" href="#portfolio">Portfolio</a>
-                        <a class="main-menubar-item mdl-navigation__link mdl-typography--text-uppercase" id="menu_cv" href="#cv">CV</a>
-                    </nav>
+    <div class="cover-sheet"></div>
+
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="javascript:loadHome();" class="brand-logo">Sebastian De Ro</a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="menu_home" href="#home">Home</a></li>
+                    <li><a id="menu_portfolio" href="#portfolio">Portfolio</a></li>
+                    <li><a id="menu_cv" href="#cv">CV</a></li>
+                    <li><a data-activates='langDrop' href='#' class="dropdown-button"><i class="material-icons">language</i></a></li>
+                    <ul id='langDrop' class='dropdown-content'>
+                        <li class="langEn"><a>English</a></li>
+                        <li class="langDe"><a>Deutsch</a></li>
+                    </ul>
+                </ul>
+                <ul class="side-nav" id="mobile-menu">
+                    <li><a id="menu_home" href="javascript:loadHome();">Home</a></li>
+                    <li><a id="menu_portfolio" href="javascript:loadPortfolio();">Portfolio</a></li>
+                    <li><a id="menu_cv" href="javascript:loadCV();">CV</a></li>
+                    <li><a data-activates='langDrop2' href='#' class="dropdown-button">Language</a></li>
+                    <ul id='langDrop2' class='dropdown-content'>
+                        <li class="langEn"><a>English</a></li>
+                        <li class="langDe"><a>Deutsch</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main id="page-content" class="container">
+        <article id="content">
+            Please enable JavaScript
+        </article>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Sebastian De Ro</h5>
+                    <p class="grey-text text-lighten-4"></p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/sebastiandero" target="_blank">LinkedIn</a></li>
+                        <li><a class="grey-text text-lighten-3" href="mailto:sebastian.dero@yahoo.de">E-Mail</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">
-          Sebastian De Ro
-        </span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_home" href="index.html#home">Home</a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_portfolio" href="index.html#portfolio">Portfolio</a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" id="mobile_menu_cv" href="index.html#cv">CV</a>
-            </nav>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2015 Sebastian De Ro
+                <a href="javascript:loadSitenotice();" class="de grey-text text-lighten-4 right">Impressum</a>
+                <a href="javascript:loadSitenotice();" class="en grey-text text-lighten-4 right">Site notice</a>
+            </div>
         </div>
+    </footer>
 
-        <main class="mdl-layout__content">
-           
-            
-              <div id="content"></div>
-            
-            
-            <footer class="mdl-mega-footer">
-               
-               <div class="mdl-mega-footer__heading">
-                   <h4>Sebastian De Ro</h4>
-               </div>
-               
-                <div class="mdl-mega-footer__top-section">
-                    <p>Website was created and is maintained by Sebastian De Ro. &#xa9; 2015</p>
-                </div>
-
-                <div class="mdl-mega-footer__middle-section">
-                    <a href="#home">Contact me.</a>
-                    <a class="sd-social-btn mdl-mega-footer__social-btn" href="https://www.linkedin.com/in/sebastiandero"></a>
-                </div>
-            </footer>
-            
-            
-        </main>
-
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-    <script src="include/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <script src="scripts/indexScript.js"></script>
-    <script src="include/mdl/material.min.js"></script>
 </body>
 
 </html>

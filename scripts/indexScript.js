@@ -1,49 +1,127 @@
+var lang;
+var currentSite;
+
 clearMenu = function () {
-    document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
-    document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    //document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    //document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
+    //document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase";
 };
+
+loadPage = function (menuitem, title, docPath) {
+    currentDocPath = docPath;
+    currentMenuitem = menuitem;
+    if ($("#page-content").scrollTop() == 0) {
+        if (menuitem != "none") {
+            clearMenu();
+            //document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
+        }
+        document.title = title;
+        $(".page-footer").fadeOut(100);
+        $("#page-content").fadeOut(100, function () {
+            document.getElementById("content").innerHTML = "";
+            $("#content").load(docPath, function () {
+                $("#page-content").fadeIn(200);
+                $(".page-footer").fadeIn(200);
+            });
+        });
+    } else {
+        $("#page-content").animate({
+            scrollTop: 0
+        }, 200, function () {
+
+            if (menuitem != "none") {
+                clearMenu();
+                //document.getElementById(menuitem).className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
+            }
+            document.title = title;
+            $(".page-footer").fadeOut(100);
+            $("#page-content").fadeOut(100, function () {
+                document.getElementById("content").innerHTML = "";
+                $("#content").load(docPath, function () {
+                    $("#page-content").fadeIn(200);
+                    $(".page-footer").fadeIn(200);
+                });
+            });
+        });
+    };
+};
+
 loadHome = function () {
-    clearMenu();
-    document.getElementById("menu_home").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-    document.title = "Sebastian De Ro - Home";
-    jQuery("#content").fadeOut(100, function () {
-        document.getElementById("content").innerHTML = "";
-        jQuery("#content").load("documents/home.html");
-        jQuery("#content").fadeIn(100);
-    });
+    currentSite = "home";
+    if (lang == "de")
+        loadPage("menu_home", "Sebastian De Ro - Home", "documents/home_de.html");
+    else
+        loadPage("menu_home", "Sebastian De Ro - Home", "documents/home.html");
 };
 loadPortfolio = function () {
-    clearMenu();
-    document.getElementById("menu_portfolio").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-    document.title = "Sebastian De Ro - Portfolio";
-    jQuery("#content").fadeOut(100, function () {
-        document.getElementById("content").innerHTML = "";
-        jQuery("#content").load("documents/portfolio.html");
-        jQuery("#content").fadeIn(200);
-    });
+    currentSite = "portfolio";
+    if (lang == "de")
+        loadPage("menu_portfolio", "Sebastian De Ro - Portfolio", "documents/portfolio_de.html");
+    else
+        loadPage("menu_portfolio", "Sebastian De Ro - Portfolio", "documents/portfolio.html");
 };
 loadCV = function () {
-    clearMenu();
-    document.getElementById("menu_cv").className = "main-menubar-item mdl-navigation__link mdl-typography--text-uppercase menu-item-active";
-    document.title = "Sebastian De Ro - CV";
-    jQuery("#content").fadeOut(100, function () {
-        document.getElementById("content").innerHTML = "";
-        jQuery("#content").load("documents/cv.html");
-        jQuery("#content").fadeIn(200);
-    });
+    currentSite = "cv";
+    if (lang == "de")
+        loadPage("menu_cv", "Sebastian De Ro - CV", "documents/cv_de.html");
+    else
+        loadPage("menu_cv", "Sebastian De Ro - CV", "documents/cv.html");
+};
+loadSitenotice = function () {
+    currentSite = "sitenotice";
+    if (lang == "de")
+        loadPage("none", "Sebastian De Ro - Site notice", "documents/impressum_de.html");
+    else
+        loadPage("none", "Sebastian De Ro - Impressum", "documents/impressum.html");
+};
+
+switchEn = function () {
+    lang = "en";
+    $(".de").hide();
+    $(".en").show();
+    if (currentSite == "portfolio") loadPortfolio();
+    else if (currentSite == "cv") loadCV();
+    else if (currentSite == "sitenotice") loadSitenotice();
+    else loadHome();
+};
+
+switchDe = function () {
+    lang = "de";
+    $(".en").hide();
+    $(".de").show();
+    if (currentSite == "portfolio") loadPortfolio();
+    else if (currentSite == "cv") loadCV();
+    else if (currentSite == "sitenotice") loadSitenotice();
+    else loadHome();
 };
 
 $("document").ready(function () {
 
+    $(".de").hide();
+    lang = navigator.language;
+
+    if (lang == "de") switchDe();
+
+    $(".cover-sheet").hide();
+    $(".button-collapse").sideNav();
+    $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: false, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    });
+
     if (window.location.hash == "#home") {
-        loadHome();
+        currentSite = loadHome();
     } else if (window.location.hash == "#portfolio") {
-        loadPortfolio();
-    } else if (window.location.hash == "#cv"){
-        loadCV();
-    } else if (window.location.hash == ""){
-        loadHome();
+        currentSite = loadPortfolio();
+    } else if (window.location.hash == "#cv") {
+        currentSite = loadCV();
+    } else if (window.location.hash == "") {
+        currentSite = loadHome();
     }
     $("#menu_home").on("click", function () {
         loadHome();
@@ -54,7 +132,7 @@ $("document").ready(function () {
     $("#menu_cv").on("click", function () {
         loadCV();
     });
-    
+
     $("#mobile_menu_home").on("click", function () {
         loadHome();
     });
@@ -63,5 +141,15 @@ $("document").ready(function () {
     });
     $("#mobile_menu_cv").on("click", function () {
         loadCV();
+    });
+
+    $("#linkedin-button").on("click", function () {
+        window.open("http://www.linkedin.com/in/sebastiandero", '_blank').focus();
+    });
+    $(".langEn").on("click", function () {
+        switchEn();
+    });
+    $(".langDe").on("click", function () {
+        switchDe();
     });
 });
